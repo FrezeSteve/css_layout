@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 2em;
+}
+.display_flex {
+  display: flex;
+}
+.flex_column {
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  align-items: center;
+}
+.padding_container {
+  padding: 0 0.25em;
+}
+.row {
+  width: 90%;
+  max-width: 1280px;
+  padding: 1em 1em;
+  margin: 0 0.5em 2em 0.5em;
+}
+.box-container {
+  border: 1px solid red;
+}
+.box-container .box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  margin: 1em 1em;
+}
+.flex_end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.space_between {
+  justify-content: space-between;
+}
+.space_around {
+  justify-content: space-around;
+}
+.max_width {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.5em 0.5em;
+  max-width: 100%;
+}
+#align_items .box-wrapper {
+  width: 100%;
+  height: calc(100% / 4);
+}
+#align_items .box {
+  width: 25px;
+  height: 25px;
+  margin: 0 0.25em;
+}
+#align_items .stretch .box {
+  height: 100%;
+}
+.wrap_boxes {
+  flex-wrap: wrap;
+  height: 100%;
+}
+#align_items .box-container {
+  height: calc(100% - 2em);
+  padding: 0.5em;
+}
+.flex_start {
+  align-items: flex-start;
+}
+
+#align_items .center{
+    align-items: center;
+    justify-content: flex-start;
+}
+#align_items .flex_end{
+    align-items: flex-end;
+    justify-content: flex-start;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Layout Redesigned</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row display_flex max_width">
+        <div class="container padding_container">
+          <h1>justify-content</h1>
+          <div class="container">
+            <div class="box-wrapper">
+              <h2>flex-start(default)</h2>
+              <div class="display_flex box-container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>flex-end</h2>
+              <div class="display_flex box-container flex_end">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>center</h2>
+              <div class="display_flex box-container center">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>space-between</h2>
+              <div class="display_flex box-container space_between">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>space-around</h2>
+              <div class="display_flex box-container space_around">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="align_items" class="container padding_container">
+          <h1>align-items</h1>
+          <div class="container display_flex wrap_boxes">
+            <div class="box-wrapper stretch">
+              <h2>stretch(default)</h2>
+              <div class="display_flex box-container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>flex-start</h2>
+              <div class="display_flex box-container flex_start">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>center</h2>
+              <div class="display_flex box-container center">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+            <div class="box-wrapper">
+              <h2>flex-end</h2>
+              <div class="display_flex box-container flex_end">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
