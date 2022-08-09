@@ -78,11 +78,27 @@ body {
   align-items: flex-start;
 }
 
-#align_items .center{
-    align-items: center;
-    justify-content: flex-start;
+#align_items .center {
+  align-items: center;
+  justify-content: flex-start;
 }
-#align_items .flex_end{
-    align-items: flex-end;
-    justify-content: flex-start;
+#align_items .flex_end {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+@media (max-width: 425px) {
+  .max_width {
+    flex-direction: column;
+  }
+  .box-container .box {
+    width: 25px;
+    height: 25px;
+    margin: 0.25em 0.25em;
+  }
+  #align_items{
+      margin-top: 2em;
+  }
+  #align_items .box-wrapper {
+    height: 10em;
+  }
 }
